@@ -1,5 +1,8 @@
-function(){
 
-//Do some weird stuff here
-
-};
+function muffinBois() {
+    $.ajax({
+        url: '/people'
+    }).done(function(data) {
+        alert();
+    });
+}
