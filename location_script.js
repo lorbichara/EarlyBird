@@ -19,7 +19,7 @@ function filter(tweet, keywords, location) {
  */
 function displayTweets(keywords, location) {
     $.ajax({
-    url: '/people'
+        url: '/people'
   }).done( function(data) {
     // DO STUFF WITH data
     var myDiv = $(".take-flight-project-insert");
