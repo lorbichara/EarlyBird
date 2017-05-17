@@ -15,7 +15,7 @@ function filter(tweet, keywords, location) {
     return null;
 
 }
-alert();
+//alert();
 /*
  * This function displays all the tweets in people.json in the html.
  * Keywords is an array of keywords that pertain to a specific topic. Ex. ['restaurant', 'food', 'ate']
@@ -24,11 +24,9 @@ alert();
  }
 
 function displayTweets(keywords, location) {
-<<<<<<< HEAD
+
 	alert();
-=======
-    alert()
->>>>>>> 11ccf5fa8a52e1cdea518d89b779d8655512a1dd
+
     $.ajax({
         url: '/people'
   }).done( function(data) {
