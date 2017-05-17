@@ -1,19 +1,39 @@
-
-function muffinBois() {
+/*
+ * This function determines if an individual tweet has one of the specific
+ * keywords and is in that location
+ *
+ */
+function filter(tweet, keywords, location) {
+    var containsKeyword = false;
+    for (var j = 0; j < keywords.length; j++) {
+        if (tweet.tweet_text.indexOf(keywords[j]) !== -1 & tweet.location === location) {
+            containsKeyword = true;
+            return tweet
+        }
+    }
+    return null;
+}
+/*
+ * This function displays all the tweets in people.json in the html.
+ * Keywords is an array of keywords that pertain to a specific topic. Ex. ['restaurant', 'food', 'ate']
+ */
+function displayTweets(keywords, location) {
     $.ajax({
     url: '/people'
   }).done( function(data) {
     // DO STUFF WITH data
     var myDiv = $(".take-flight-project-insert");
+    data = data.sort(function (a, b) {  return parseInt(a.tweet_time_display.splice(0,1)) - parseInt(b.tweet_time_display.splice(0,1));  });
     console.log(data);
     console.log(data.length);
     for (i = 0; i < data.length; i++) {
-      var tweet = data[i];
-      tweet.tweeter_img = "/twitter_profile_files/mkpdB9Tf_bigger.jpg";
-      tweet.tweeter_name = "jack";
-      tweet.tweet_time_display = "18h";
-      var child = myDiv.clone();
-      child.html("<li class=\"js-stream-item stream-item stream-item\">" +
+        var tweet = filter(data[i], keywords, location);
+        if (tweet !== null) {
+            tweet.tweeter_img = "/twitter_profile_files/mkpdB9Tf_bigger.jpg";
+            tweet.tweeter_name = "jack";
+            tweet.tweet_time_display = "18h";
+            var child = myDiv.clone();
+            child.html("<li class=\"js-stream-item stream-item stream-item\">" +
   "<div class=\"tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable dismissible-content original-tweet js-original-tweet\">" +
     "<div class=\"content\">" +
       "<div class=\"stream-item-header\">" +
@@ -88,6 +108,9 @@ function muffinBois() {
 "</div>" +
 "</div>" +
 "</li>");
-      myDiv.append(child);
+            myDiv.append(child);
+        }
+
     }
   });
+}
