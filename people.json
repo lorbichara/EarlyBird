@@ -1,21 +1,45 @@
-{
-	"name":"Jason",
-	"location":"Atlanta,Georgia"
-	"text":"Jk, not from Atlanta"
+[{
+	"tweeter_img":"",
+	"tweeter_name": "@edward",
+	"tweet_text": "restaurant",
+	"number_of_likes": 19,
+	"number_of_retweets": 159,
+	"tweet_time_display": "18h",
+	"location": "Accra, Ghana",
 },
 {
-	"name":"Beyonce",
-	"location":"San Francisco,California"
-	"text":"Hi San Francisco"
+	"tweeter_img":,
+	"tweeter_name": "@marian",
+	"tweet_text": "movies",
+	"number_of_likes": 26,
+	"number_of_retweets": 54,
+	"tweet_time_display": "10h",
+	"location": "London, UK",
 },
 {
-	"name":"PLAYBOI CARTI",
-	"location":"Atlanta,Georgia"
-	"text":"Slayin'"
+	"tweeter_img":"",
+	"tweeter_name": "@bobmarley",
+	"tweet_text": "food",
+	"number_of_likes": 298,
+	"number_of_retweets": 368,
+	"tweet_time_display": "16h",
+	"location": "Kingston, Jamaica",
 },
 {
-	"name":"Jerry Garcia"
-	"location":"San Francisco, California"
-	"text":"Truckin'"
-}
-;
+	"tweeter_img":"",
+	"tweeter_name": "@jessica",
+	"tweet_text": "",
+	"number_of_likes": 89,
+	"number_of_retweets": 93,
+	"tweet_time_display": "20h",
+	"location": "Sacramento,CA USA",
+},
+{
+	"tweeter_img":"",
+	"tweeter_name": "@nguyen",
+	"tweet_text": "",
+	"number_of_likes": 58,
+	"number_of_retweets": 37,
+	"tweet_time_display": "15h",
+	"location": "Beijing, China",
+}]
