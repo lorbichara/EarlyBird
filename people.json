@@ -1,21 +1,28 @@
+[{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+},
+
 {
-	"name":"Jason",
-	"location":"Atlanta,Georgia"
-	"text":"Jk, not from Atlanta"
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
 },
 {
-	"name":"Beyonce",
-	"location":"San Francisco,California"
-	"text":"Hi San Francisco"
-},
-{
-	"name":"PLAYBOI CARTI",
-	"location":"Atlanta,Georgia"
-	"text":"Slayin'"
-},
-{
-	"name":"Jerry Garcia"
-	"location":"San Francisco, California"
-	"text":"Truckin'"
-}
-;
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}]

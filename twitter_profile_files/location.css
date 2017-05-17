@@ -1,0 +1,5 @@
+.location-stream-container{
+	
+	margin:1px 0 0 1px;
+	transition:height .5s,width .5s ease
+}

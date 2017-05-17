@@ -10,14 +10,21 @@ function filter(tweet, keywords, location) {
             containsKeyword = true;
             return tweet
         }
+		
     }
     return null;
+	
 }
+alert();
 /*
  * This function displays all the tweets in people.json in the html.
  * Keywords is an array of keywords that pertain to a specific topic. Ex. ['restaurant', 'food', 'ate']
- */
+ */function test(){
+	alert();
+ }
+ 
 function displayTweets(keywords, location) {
+	alert();
     $.ajax({
     url: '/people'
   }).done( function(data) {
@@ -27,7 +34,8 @@ function displayTweets(keywords, location) {
     console.log(data);
     console.log(data.length);
     for (i = 0; i < data.length; i++) {
-        var tweet = filter(data[i], keywords, location);
+       // var tweet = filter(data[i], keywords, location);
+	   var tweet = data[i];
         if (tweet !== null) {
             tweet.tweeter_img = "/twitter_profile_files/mkpdB9Tf_bigger.jpg";
             tweet.tweeter_name = "jack";

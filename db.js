@@ -1,5 +1,5 @@
 module.exports = function() {
   return {
-    people: require('./profiles.json'),
+    people: require('./people.json'),
   }
 }
