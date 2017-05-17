@@ -23,16 +23,16 @@ function filter(tweet, keywords, location) {
 	alert();
  }
 
-function displayTweets(keywords, location) {
+function displayTweets() {
 
 	alert();
 
     $.ajax({
-        url: '/people'
+        url: '/results'
   }).done( function(data) {
     // DO STUFF WITH data
     var myDiv = $(".take-flight-project-insert");
-    data = data.sort(function (a, b) {  return parseInt(a.tweet_time_display.splice(0,1)) - parseInt(b.tweet_time_display.splice(0,1));  });
+    data = data.results.sort(function (a, b) {  return parseInt(a.tweet_time_display.splice(0,1)) - parseInt(b.tweet_time_display.splice(0,1));  });
     console.log(data);
     console.log(data.length);
     for (i = 0; i < data.length; i++) {
