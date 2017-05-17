@@ -1,13 +1,4 @@
 [{
-<<<<<<< HEAD
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
-=======
 	"tweeter_img":"",
 	"tweeter_name": "@edward",
 	"tweet_text": "restaurant",
@@ -33,28 +24,8 @@
 	"number_of_retweets": 368,
 	"tweet_time_display": "16h",
 	"location": "Kingston, Jamaica",
->>>>>>> 11ccf5fa8a52e1cdea518d89b779d8655512a1dd
-},
-
-{
-<<<<<<< HEAD
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
 },
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
-=======
 	"tweeter_img":"",
 	"tweeter_name": "@jessica",
 	"tweet_text": "",
@@ -71,5 +42,4 @@
 	"number_of_retweets": 37,
 	"tweet_time_display": "15h",
 	"location": "Beijing, China",
->>>>>>> 11ccf5fa8a52e1cdea518d89b779d8655512a1dd
 }]
