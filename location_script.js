@@ -18,6 +18,7 @@ function filter(tweet, keywords, location) {
  * Keywords is an array of keywords that pertain to a specific topic. Ex. ['restaurant', 'food', 'ate']
  */
 function displayTweets(keywords, location) {
+    alert()
     $.ajax({
         url: '/people'
   }).done( function(data) {
@@ -30,8 +31,10 @@ function displayTweets(keywords, location) {
         var tweet = filter(data[i], keywords, location);
         if (tweet !== null) {
             tweet.tweeter_img = "/twitter_profile_files/mkpdB9Tf_bigger.jpg";
+            /*
             tweet.tweeter_name = "jack";
             tweet.tweet_time_display = "18h";
+            */
             var child = myDiv.clone();
             child.html("<li class=\"js-stream-item stream-item stream-item\">" +
   "<div class=\"tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable dismissible-content original-tweet js-original-tweet\">" +
