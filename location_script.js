@@ -24,9 +24,13 @@ alert();
  }
  
 function displayTweets(keywords, location) {
+<<<<<<< HEAD
 	alert();
+=======
+    alert()
+>>>>>>> 11ccf5fa8a52e1cdea518d89b779d8655512a1dd
     $.ajax({
-    url: '/people'
+        url: '/people'
   }).done( function(data) {
     // DO STUFF WITH data
     var myDiv = $(".take-flight-project-insert");
@@ -38,8 +42,10 @@ function displayTweets(keywords, location) {
 	   var tweet = data[i];
         if (tweet !== null) {
             tweet.tweeter_img = "/twitter_profile_files/mkpdB9Tf_bigger.jpg";
+            /*
             tweet.tweeter_name = "jack";
             tweet.tweet_time_display = "18h";
+            */
             var child = myDiv.clone();
             child.html("<li class=\"js-stream-item stream-item stream-item\">" +
   "<div class=\"tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable dismissible-content original-tweet js-original-tweet\">" +
