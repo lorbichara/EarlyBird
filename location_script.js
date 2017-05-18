@@ -33,8 +33,9 @@ function displayTweets(keywords, location) {
        // var tweet = filter(data[i], keywords, location);
 	   var tweet = data[i];
         if (tweet !== null) {
+          /*
             tweet.tweeter_img = "twitter_profile_files/mkpdB9Tf_bigger.jpg";
-            /*
+
             tweet.tweeter_name = "jack";
             tweet.tweet_time_display = "18h";
             */
