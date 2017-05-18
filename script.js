@@ -1,62 +1,22 @@
-/*
- * This function determines if an individual tweet has one of the specific
- * keywords and is in that location
- *
- */
-function filter(tweet, keywords, location) {
-    var containsKeyword = false;
-    for (var j = 0; j < keywords.length; j++) {
-        if (tweet.tweet_text.indexOf(keywords[j]) !== -1 & tweet.location === location) {
-            containsKeyword = true;
-            return tweet
-        }
 
-    }
-    return null;
+  var data = [
+    {tweeter_name: "abc", number_of_replies: 1, number_of_retweets: 12, number_of_likes: 12, tweet_text: "hie :)"},
+    {tweeter_name: "xyz", number_of_replies: 10, number_of_retweets: 12, number_of_likes: 12, tweet_text: "wwow!!"}
+  ];
 
-}
-/*
- * This function displays all the tweets in people.json in the html.
- * Keywords is an array of keywords that pertain to a specific topic. Ex. ['restaurant', 'food', 'ate']
-
- */function test(){
-	alert();
- }
-
-function displayTweets() {
-
-	alert();
-
-    $.ajax({
-
- */
-function displayTweets(keywords, location) {
-
-  $.ajax({
-
-        url: 'http://localhost:3000/results'
-  }).done( function(data) {
+  function processJson(data) {
     // DO STUFF WITH data
-
     var myDiv = $(".take-flight-project-insert");
-
-    data = data['results'].sort(function (a, b) {  return parseInt(a.tweet_time_display.splice(0,1)) - parseInt(b.tweet_time_display.splice(0,1));  });
-
     console.log(data);
     console.log(data.length);
-    //data = data.sort(function (a, b) {  return parseInt(a.tweet_time_display.splice(0,1)) - parseInt(b.tweet_time_display.splice(0,1));  });
     for (i = 0; i < data.length; i++) {
-       // var tweet = filter(data[i], keywords, location);
-	   var tweet = data[i];
-        if (tweet !== null) {
-          /*
-            tweet.tweeter_img = "twitter_profile_files/mkpdB9Tf_bigger.jpg";
-
-            tweet.tweeter_name = "jack";
-            tweet.tweet_time_display = "18h";
-            */
-            var child = myDiv.clone();
-            child.html("<li class=\"js-stream-item stream-item stream-item\">" +
+      var tweet = data[i];
+      console.log("adding tweet", tweet);
+      tweet.tweeter_img = "/twitter_profile_files/mkpdB9Tf_bigger.jpg";
+      // tweet.tweeter_name = "jack";
+      tweet.tweet_time_display = "18h";
+      var child = myDiv.clone();
+      child.html("<li class=\"js-stream-item stream-item stream-item\">" +
   "<div class=\"tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable dismissible-content original-tweet js-original-tweet\">" +
     "<div class=\"content\">" +
       "<div class=\"stream-item-header\">" +
@@ -68,7 +28,7 @@ function displayTweets(keywords, location) {
         "<span class=\"UserNameBreak\">&nbsp;</span>" +
       "</span>" +
       "<span class=\"username u-dir\" dir=\"ltr\">@<b>" + tweet.tweeter_name +
-      "</b></span>" +
+      "</b></span>" +  
       "<small class=\"time\">" + tweet.tweet_time_display +
       "</small>" +
       "</div>" +
@@ -131,9 +91,17 @@ function displayTweets(keywords, location) {
 "</div>" +
 "</div>" +
 "</li>");
-            myDiv.append(child);
-        }
-
-    }
-  });
+      myDiv.append(child);
+  }
 }
+$( document ).ready(function() {
+    console.log( "ready!" );
+    processJson(data);
+});
+
+
+
+// $.ajax({
+//     url: '/tweets'
+//   }).done(
+//   });
