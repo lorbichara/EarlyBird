@@ -31,7 +31,6 @@ function displayTweets(keywords, location) {
     //data = data.sort(function (a, b) {  return parseInt(a.tweet_time_display.splice(0,1)) - parseInt(b.tweet_time_display.splice(0,1));  });
     for (i = 0; i < data.length; i++) {
      var tweet = filter(data[i], keywords, location);
-	   var tweet = data[i];
         if (tweet !== null) {
           /*
             tweet.tweeter_img = "twitter_profile_files/mkpdB9Tf_bigger.jpg";
