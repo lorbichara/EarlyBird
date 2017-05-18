@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="./twitter_profile_files/twitter_core.bundle.css">
   <link rel="stylesheet" href="./twitter_profile_files/twitter_more_1.bundle.css">
   <link rel="stylesheet" href="./twitter_profile_files/twitter_more_2.bundle.css">
+    <link rel="stylesheet" href="drop_menu.css">
+
 
   <link rel="dns-prefetch" href="https://pbs.twimg.com/">
   <link rel="dns-prefetch" href="https://t.co/">
@@ -50,7 +52,12 @@
 
 
 
-
+    <script>
+    function showMenu()
+    {
+      document.getElementById("myDrop").classList.toggle("show");
+    }
+    </script>
 
 </head>
 
@@ -668,28 +675,53 @@
 
   <!-- TWITTER UNIVERSITY -->
   <!-- TABS and links -->
-  <div class="ProfileHeading-spacer"></div>
+<div class="ProfileHeading-spacer"></div>
     <div class="ProfileHeading-content">
       <h2 id="content-main-heading" class="ProfileHeading-title u-hiddenVisually ">Tweets</h2>
         <ul class="ProfileHeading-toggle">
-            <li class="ProfileHeading-toggleItem  is-active" data-element-term="tweets_toggle">
+
+            <li class="ProfileHeading-toggleItem  u-textUserColor" data-element-term="tweets_toggle">
                 <span aria-hidden="true">Tweets</span>
                 <span class="u-hiddenVisually">Tweets, current page.</span>
             </li>
+
             <li class="ProfileHeading-toggleItem  u-textUserColor" data-element-term="tweets_with_replies_toggle">
                 <a class="ProfileHeading-toggleLink js-nav" href="https://twitter.com/jack/with_replies" data-nav="tweets_with_replies_toggle">
                   Tweets &amp; replies
                 </a>
             </li>
+
             <li class="ProfileHeading-toggleItem  u-textUserColor" data-element-term="photos_and_videos_toggle">
                 <a class="ProfileHeading-toggleLink js-nav" href="https://twitter.com/jack/media" data-nav="photos_and_videos_toggle">
                   Media
                 </a>
             </li>
-            <li class="ProfileHeading-toggleItem  u-textUserColor" data-element-term="photos_and_videos_toggle">
-                <a class="ProfileHeading-toggleLink js-nav" href="me.html" data-nav="photos_and_videos_toggle">
-                  #Me
-                </a>
+            <li class="ProfileHeading-toggleItem  is-active" data-element-term="photos_and_videos_toggle">
+
+
+            <div style="position:absolute; right: 200px; margin-top: 7px" >
+                <span aria-hidden="true">#Here</span>
+
+            </div>
+
+          <div>
+
+          <div>
+          <button onclick="showMenu()" class="dropbutt ProfileTweet-actionButton u-textUserColorHover dropdown-toggle js-dropdown-toggle " type="button" style="margin-left: 350%; margin-top: 50%;">
+
+              <span class = "Icon Icon--caretDownLight Icon--smallest"></span>
+
+            <!-- <span class = "u-hiddenVisually">More</span> -->
+          </button>
+          </div>
+            <div id="myDrop" class ="dropdown-content">
+              <a href="food.html"> Food </a>
+              <a href="events.html"> Events </a>
+              <a href="trends.html"> Trending Topics</a>
+            </div>
+</div>
+
+
             </li>
         </ul>
     </div>
