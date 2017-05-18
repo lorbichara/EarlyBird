@@ -1,37 +1,37 @@
 {"results":[{
-	"tweeter_img":"",
-	"tweeter_name": "edward",
-	"tweet_text": "restaurant",
+	"tweeter_img":"twitter_profile_files/coolsuave.jpg",
+	"tweeter_name": "coolsuave",
+	"tweet_text": "Bruh I just ate at SOULFOOD restuarant and it was 🔥🔥",
 	"number_of_likes": 19,
 	"number_of_retweets": 159,
-	"tweet_time_display": "18h",
+	"tweet_time_display": "1m",
 	"location": "Bora Bora, Tahiti"
 },
 {
-	"tweeter_img":"",
+	"tweeter_img":"twitter_profile_files/lorry.jpg",
 	"tweeter_name": "marian",
-	"tweet_text": "movies",
+	"tweet_text": "Just finished my amazing dinner at AsianZen! Would def go back.",
 	"number_of_likes": 26,
 	"number_of_retweets": 54,
-	"tweet_time_display": "10h",
+	"tweet_time_display": "2h",
 	"location": "Bora Bora, Tahiti"
 },
 {
 	"tweeter_img":"",
 	"tweeter_name": "bobmarley",
-	"tweet_text": "food",
+	"tweet_text": "Guardians of the galaxy 2 is the best movie in the entire galaxy.",
 	"number_of_likes": 298,
 	"number_of_retweets": 368,
-	"tweet_time_display": "16h",
+	"tweet_time_display": "2h",
 	"location": "Bora Bora, Tahiti"
 },
 {
-	"tweeter_img":"",
+	"tweeter_img":"twitter_profile_files/huh.jpg",
 	"tweeter_name": "jessica",
 	"tweet_text": "",
 	"number_of_likes": 89,
 	"number_of_retweets": 93,
-	"tweet_time_display": "20h",
+	"tweet_time_display": "3h",
 	"location": "Bora Bora, Tahiti"
 },
 {
@@ -40,7 +40,7 @@
 	"tweet_text": "",
 	"number_of_likes": 30032,
 	"number_of_retweets": 3400,
-	"tweet_time_display": "20h",
+	"tweet_time_display": "4h",
 	"location": "Bora Bora, Tahiti"
 },
 {
@@ -71,7 +71,7 @@
 	"location": "Bora Bora, Tahiti"
 },
 {
-	"tweeter_img":"",
+	"tweeter_img":"twitter_profile_files/memegod.jpg",
 	"tweeter_name": "memegod",
 	"tweet_text": "",
 	"number_of_likes": 3,
