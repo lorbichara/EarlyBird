@@ -18,11 +18,12 @@
 
 .dropdown-content a{
 
-	color:blue;
+	color:#6DAAE8;
 	padding: 12px 16px;
 	display:block;
 	font-size: 14px;
 	font-family: "Helvetica Neue";
+	/*font-display:auto;*/
 }
 
 .show{
