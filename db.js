@@ -1,5 +1,4 @@
 module.exports = function() {
-  return {
-    people: require('./people.json'),
-  }
+  return {people: require('./people.json')}
+  
 }
