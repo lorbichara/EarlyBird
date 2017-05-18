@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./twitter_profile_files/twitter_more_1.bundle.css">
   <link rel="stylesheet" href="./twitter_profile_files/twitter_more_2.bundle.css">
 
+  <link rel="stylesheet" href="./drop_menu.css">
+  
   <link rel="dns-prefetch" href="https://pbs.twimg.com/">
   <link rel="dns-prefetch" href="https://t.co/">
 
@@ -18,35 +20,6 @@
   
   <title>jack (@jack) | Twitter</title>
 
-  <link rel="stylesheet" href="./drop_menu.css">
-
-<script>
-	function showMenu(){
-	document.getElementById("myDrop").classList.toggle("show");
-}
-
-window.onclick = function(event){
-	if(!event.target.matches('.dropbutt')){
-
-		var dropdowns = document.getElementsByClass("dropdown-content");
-		var i;
-
-		for(i = 0; i<dropdowns.length;i++){
-			var openDropdown = dropdowns[i];
-
-			if(openDropdown.classList.contains('show')){
-				openDropDown.classList.remove('show');
-				
-			}
-		}
-
-	}
-	
-	
-}
-
-</script>
-  
   <meta name="msapplication-TileImage" content="//abs.twimg.com/favicons/win8-tile-144.png">
   <meta name="msapplication-TileColor" content="#00aced">
 
@@ -73,7 +46,13 @@ window.onclick = function(event){
       <script type="text/javascript" charset="utf-8" async="" src="./twitter_profile_files/14.pages_profile.en.33821097e57430b07e1f.js"></script>
       <style type="text/css" id="hidden-dms"></style>
 
-
+	  <script>
+		function showMenu()
+		{
+			document.getElementById("myDrop").classList.toggle("show");
+		}
+	  </script>
+	  
 <!-- TWITTER UNIVERSITY -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
@@ -719,6 +698,7 @@ window.onclick = function(event){
             </li>
             <li class="ProfileHeading-toggleItem  is-active" data-element-term="photos_and_videos_toggle">
            
+
 				    <!-- <span aria-hidden="true">#Me</span> -->
 					<!-- <div class = "dropdown"> -->
 
@@ -735,12 +715,12 @@ window.onclick = function(event){
                 <!-- <span class="u-hiddenVisually">#Me, current page.</span> -->
 				
 								    <span aria-hidden="true">#Here</span>
-					<div class = "dropdown">
+					<div >
 
-					<button onclick="showMenu()" class=" ProfileTweet-actionButton u-textUserColorHover dropdown-toggle js-dropdown-toggle dropbutt" type="button">
-						<!-- <span class = "Icon Icon--caretDownLight Icon--smallest"></span> -->
-						<!-- <span class = "u-hiddenVisually">More</span> -->
-						^
+					<button onclick="showMenu()" class="dropbutt ProfileTweet-actionButton u-textUserColorHover dropdown-toggle js-dropdown-toggle " type="button">
+						<span class = "Icon Icon--caretDownLight Icon--smallest"></span> 
+						<!--<span class = "u-hiddenVisually">More</span>--->
+						
 					</button>
 						<div id="myDrop" class ="dropdown-content">
 							<a href="#">LINK 1</a>
@@ -748,7 +728,7 @@ window.onclick = function(event){
 							<a href="#">LINK 3</a>
 						</div>
 </div>
-				
+		
             </li>
         </ul>
     </div>
