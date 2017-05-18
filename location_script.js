@@ -9,9 +9,11 @@ function filter(tweet, keywords, location) {
         if (tweet.tweet_text.indexOf(keywords[j]) !== -1 & tweet.location === location) {
             containsKeyword = true;
             return tweet
+            console.log("yes");
         }
 
     }
+    console.log("no");
     return null;
 
 }
