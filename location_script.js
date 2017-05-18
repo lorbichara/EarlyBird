@@ -18,35 +18,19 @@ function filter(tweet, keywords, location) {
 /*
  * This function displays all the tweets in people.json in the html.
  * Keywords is an array of keywords that pertain to a specific topic. Ex. ['restaurant', 'food', 'ate']
-
- */function test(){
-	alert();
- }
-
-function displayTweets() {
-
-	alert();
-
-    $.ajax({
-
  */
 function displayTweets(keywords, location) {
 
   $.ajax({
-
         url: 'http://localhost:3000/results'
   }).done( function(data) {
     // DO STUFF WITH data
-
     var myDiv = $(".take-flight-project-insert");
-
-    data = data['results'].sort(function (a, b) {  return parseInt(a.tweet_time_display.splice(0,1)) - parseInt(b.tweet_time_display.splice(0,1));  });
-
     console.log(data);
     console.log(data.length);
     //data = data.sort(function (a, b) {  return parseInt(a.tweet_time_display.splice(0,1)) - parseInt(b.tweet_time_display.splice(0,1));  });
     for (i = 0; i < data.length; i++) {
-       // var tweet = filter(data[i], keywords, location);
+     var tweet = filter(data[i], keywords, location);
 	   var tweet = data[i];
         if (tweet !== null) {
           /*
