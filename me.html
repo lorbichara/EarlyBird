@@ -18,6 +18,35 @@
   
   <title>jack (@jack) | Twitter</title>
 
+  <link rel="stylesheet" href="./drop_menu.css">
+
+<script>
+	function showMenu(){
+	document.getElementById("myDrop").classList.toggle("show");
+}
+
+window.onclick = function(event){
+	if(!event.target.matches('.dropbutt')){
+
+		var dropdowns = document.getElementsByClass("dropdown-content");
+		var i;
+
+		for(i = 0; i<dropdowns.length;i++){
+			var openDropdown = dropdowns[i];
+
+			if(openDropdown.classList.contains('show')){
+				openDropDown.classList.remove('show');
+				
+			}
+		}
+
+	}
+	
+	
+}
+
+</script>
+  
   <meta name="msapplication-TileImage" content="//abs.twimg.com/favicons/win8-tile-144.png">
   <meta name="msapplication-TileColor" content="#00aced">
 
@@ -690,7 +719,19 @@
             </li>
             <li class="ProfileHeading-toggleItem  is-active" data-element-term="photos_and_videos_toggle">
            
-				    <span aria-hidden="true">#Me</span>
+				    <span aria-hidden="true">#Here</span>
+					<div class = "dropdown">
+
+					<button onclick="showMenu()" class=" ProfileTweet-actionButton u-textUserColorHover dropdown-toggle js-dropdown-toggle dropbutt" type="button">
+						<span class = "Icon Icon--caretDownLight Icon--smallest"></span>
+						<span class = "u-hiddenVisually">More</span>
+					</button>
+						<div id="myDrop" class ="dropdown-content">
+							<a href="#">LINK 1</a>
+							<a href="#">LINK 2</a>
+							<a href="#">LINK 3</a>
+						</div>
+</div>
                 <span class="u-hiddenVisually">#Me, current page.</span>
             </li>
         </ul>
