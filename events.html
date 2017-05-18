@@ -51,6 +51,26 @@
 		{
 			document.getElementById("myDrop").classList.toggle("show");
 		}
+		
+		 window.onclick = function(event){
+			
+			if(!event.target.matches('.dropbutt')){
+				var dropdowns = document.getElementsByClass("dropdown-content");
+				
+				var i;
+				
+				for(i = 0; i < dropdowns.length;i++)
+				{
+					var openDropdown = dropdowns[i];
+					if(openDropdown.classList.contains('show'))
+					{
+						openDropdown.classList.remove('show');
+						
+					}
+				}
+			}
+		 
+		 }
 	  </script>
 
 <!-- TWITTER UNIVERSITY -->
@@ -715,9 +735,9 @@
 					</button>
           </div>
 						<div id="myDrop" class ="dropdown-content">
-							<a href="#"> Food </a>
-							<a href="#"> Events </a>
-							<a href="#"> Trending Topics</a>
+							<a href="./food.html"> Food </a>
+							<a href="./events.html"> Events </a>
+							<a href="./trends.html"> Trending Topics</a>
 						</div>
 </div>
 
