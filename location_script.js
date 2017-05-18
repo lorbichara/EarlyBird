@@ -28,7 +28,7 @@ function displayTweets(keywords, location) {
 	alert();
 
     $.ajax({
-        url: '/people'
+        url: 'http://localhost:3000/results'
   }).done( function(data) {
     // DO STUFF WITH data
     var myDiv = $(".take-flight-project-insert");
