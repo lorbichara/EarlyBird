@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./twitter_profile_files/twitter_core.bundle.css">
   <link rel="stylesheet" href="./twitter_profile_files/twitter_more_1.bundle.css">
   <link rel="stylesheet" href="./twitter_profile_files/twitter_more_2.bundle.css">
+  <link rel="stylesheet" href="./drop_menu.css">
 
   <link rel="dns-prefetch" href="https://pbs.twimg.com/">
   <link rel="dns-prefetch" href="https://t.co/">
@@ -673,9 +674,10 @@
     <div class="ProfileHeading-content">
       <h2 id="content-main-heading" class="ProfileHeading-title u-hiddenVisually ">Tweets</h2>
         <ul class="ProfileHeading-toggle">
-            <li class="ProfileHeading-toggleItem  is-active" data-element-term="tweets_toggle">
-                <span aria-hidden="true">Tweets</span>
-                <span class="u-hiddenVisually">Tweets, current page.</span>
+            <li class="ProfileHeading-toggleItem  u-textUserColor"  data-element-term="tweets_toggle">
+               <a class="ProfileHeading-toggleLink js-nav" href="/jack" data-nav="tweets_toggle">
+                  Tweets
+                </a>
             </li>
             <li class="ProfileHeading-toggleItem  u-textUserColor" data-element-term="tweets_with_replies_toggle">
                 <a class="ProfileHeading-toggleLink js-nav" href="https://twitter.com/jack/with_replies" data-nav="tweets_with_replies_toggle">
@@ -763,6 +765,9 @@
     <div class="stream">
         <ol class="stream-items js-navigable-stream" id="stream-items-id">
 
+		<span class = "picture-divider">
+			<!---Picture goes here--->
+		</span>
 <!-- BEGIN INSERT DIV -->
 <div class="take-flight-project-insert">
 

@@ -29,13 +29,14 @@
 	display:block;
 }
 
-/*
+
 
 .picture-divider{
 	display: block;
 	padding: 12px 16px;
+	padding-top: 5px;
 	color: grey;
-	width: 400px;
+	width: 560px;
 	height:200px;
-	background: black;
-}*/
+
+}
