@@ -3,8 +3,9 @@
 	"tweeter_name": "coolsuave",
 	"tweet_text": "Bruh I just ate at SOULFOOD restaurant and it was 🔥🔥",
 	"number_of_likes": 19,
+	"number_of_replies": 7,
 	"number_of_retweets": 159,
-	"tweet_time_display": "1m",
+	"tweet_time_display": " 1m",
 	"location": "Bora Bora, Tahiti"
 },
 {
@@ -12,8 +13,9 @@
 	"tweeter_name": "marian",
 	"tweet_text": "Just finished my amazing dinner at AsianZen! Would def go back.",
 	"number_of_likes": 26,
+	"number_of_replies": 31,
 	"number_of_retweets": 54,
-	"tweet_time_display": "2h",
+	"tweet_time_display": " 2h",
 	"location": "Bora Bora, Tahiti"
 },
 {
@@ -21,8 +23,9 @@
 	"tweeter_name": "bobmarley",
 	"tweet_text": "Best convention in the entire world. Right in our city!!",
 	"number_of_likes": 298,
+	"number_of_replies": 123,
 	"number_of_retweets": 368,
-	"tweet_time_display": "2h",
+	"tweet_time_display": " 2h",
 	"location": "Bora Bora, Tahiti"
 },
 {
@@ -30,8 +33,9 @@
 	"tweeter_name": "jessica",
 	"tweet_text": "Going to Beyonce's concert!! That bit fenna be wiiiild!!!",
 	"number_of_likes": 89,
+	"number_of_replies": 30,
 	"number_of_retweets": 93,
-	"tweet_time_display": "3h",
+	"tweet_time_display": " 3h",
 	"location": "Bora Bora, Tahiti"
 },
 {
@@ -39,8 +43,9 @@
 	"tweeter_name": "jack",
 	"tweet_text": "Square Cash is now accepted at restaurants!",
 	"number_of_likes": 30032,
+	"number_of_replies": 1049,
 	"number_of_retweets": 3400,
-	"tweet_time_display": "4h",
+	"tweet_time_display": " 4h",
 	"location": "Bora Bora, Tahiti"
 },
 {
@@ -48,8 +53,9 @@
 	"tweeter_name": "david",
 	"tweet_text": "Hamilton the musical is playing right down the street!!",
 	"number_of_likes": 2000,
+	"number_of_replies": 50,
 	"number_of_retweets": 334,
-	"tweet_time_display": "4h",
+	"tweet_time_display": " 4h",
 	"location": "Bora Bora, Tahiti"
 },
 {
@@ -57,8 +63,9 @@
 	"tweeter_name": "memegod",
 	"tweet_text": "Hamilton!!!!!! THE musical!!! HERE!!! TODAY!!!",
 	"number_of_likes": 3,
+	"number_of_replies": "",
 	"number_of_retweets": 1,
-	"tweet_time_display": "20h",
+	"tweet_time_display": " 20h",
 	"location": "Bora Bora, Tahiti"
 },
 {
@@ -66,8 +73,9 @@
 	"tweeter_name": "karen",
 	"tweet_text": "Just got my ticket to see Chance in concert!!",
 	"number_of_likes": 1003,
+	"number_of_replies": 58,
 	"number_of_retweets": 468,
-	"tweet_time_display": "20h",
+	"tweet_time_display": " 20h",
 	"location": "Bora Bora, Tahiti"
 },
 {
@@ -75,7 +83,8 @@
 	"tweeter_name": "nguyen",
 	"tweet_text": "You have to try food at my Mama Nguyens restaurant!",
 	"number_of_likes": 58,
+	"number_of_replies": 10,
 	"number_of_retweets": 37,
-	"tweet_time_display": "20h",
+	"tweet_time_display": " May 16",
 	"location": "Bora Bora, Tahiti"
 }]}
