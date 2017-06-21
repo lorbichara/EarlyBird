@@ -5,4 +5,5 @@ From the settings page, the user selects which categories he/she wants to see. T
 - Events: tweets related to events going on nearby such as conferences, movies playing, concerts, etc.
 - Food: tweets related to food like as restaurant recommendations.
 - Trending Topics: the trending topics section was moved to this page.
+
 Some other categories available may be Emergency Alerts, Shopping, etc.
